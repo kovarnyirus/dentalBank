@@ -1,14 +1,14 @@
 mixin  history-slider(arr)
-	each item in arr
-		+e.slider
-			.swiper-container
-				.swiper-wrapper
+	+e.slider
+		.swiper-container
+			.swiper-wrapper
+				each item in arr
 					.swiper-slide
 						+e.slide-img(src='img/' + item alt='img')
 
 mixin history()
 	+b.SECTION.history
-		+e.wrapper
+		+e.wrapper.container
 			+e.H2.title Стоматологическая молодость на всю жизнь
 			+e.subtitle  Как это работает
 			p  Допустим, вы сохранили цифровые копии ваших здоровых зубов в Dental Bank, а спустя какое-то время,  вам потребовалось поставить искусственные коронки
