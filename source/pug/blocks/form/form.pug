@@ -1,0 +1,9 @@
+mixin form()
+	// start form
+	+b.FORM.form
+		+e.LABEl.input-wrapper
+			+e.INPUT.input--phone(type='phone' placeholder='Введите номер телефона')
+			+icon('phone')
+		+e.BUTTON.button Получить консультацию о процедуре
+
+	// end form

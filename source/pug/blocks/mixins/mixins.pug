@@ -1,9 +1,8 @@
-mixin mixins()
-	// start mixins
-	+b.mixins.section#mixins.lazy-background&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 mixins
-				
-			.row
-	// end mixins
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="img/icons/sprite.svg#" + name)
+mixin picture()
+	picture
+		source(media="(min-width: 540px)" srcset='img/case-stalker/1.png')
+		+e.IMG.img(src='img/case-stalker/1-mobile.png' alt='1')

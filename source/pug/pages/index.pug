@@ -1,8 +1,32 @@
 extends layout/main
+include ../blocks/header/header
+include ../blocks/footer/footer
+include ../blocks/main-nav/main-nav
+include ../blocks/mixins/mixins
+include ../blocks/form/form
+include ../blocks/information/information
+include ../blocks/why/why
+include ../blocks/functional/functional
+include ../blocks/history/history
+include ../blocks/video-block/video-block
+include ../blocks/age/age
+include ../blocks/video-slider/video-slider
+include ../blocks/experts/experts
+include ../blocks/callback/callback
+
 block title
 	title DentalBank
 block pagecontent
-	.container
-		+b.header
-			+e.wrapper sad
+	+header()
+	+information()
+	+why()
+	+functional()
+	+history()
+	+video-block()
+	+age()
+	+video-slider()
+	+experts()
+	+callback()
+	+footer()
+
 

@@ -1,0 +1,11 @@
+mixin footer()
+	+b.FOOTER.footer
+		+e.wrapper
+			+e.logo-wrapper
+				+e.IMG.logo(src='img/logo.svg' alt='footer-logo')
+				+e.copyright 2020 | Все права защищены
+				+e.A.callback(href='tel:+79876543210')
+					+icon('phone')
+					| +7 987 654 32 10
+				+e.A.form-link.scroll(href='#') Получить консультацию
+

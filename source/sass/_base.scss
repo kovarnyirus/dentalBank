@@ -1,8 +1,38 @@
 body{
-  font-family: SF Pro Display sans-serif;
+  font-family: SF Pro Display;
   color: #000000;
   font-size: 12px;
 }
 p{
   color: rgba(0, 0, 0, .7 );
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.link{
+  color: #FF0080;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+}
+
+.icon{
+  &-phone{
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.container{
+  padding-left: 20px;
+  padding-right: 20px;
 }

@@ -1,3 +1,13 @@
 mixin header()
-	+b.header
-		+e.burger.nav-toggle
+	+b.HEADER.header
+		+e.wrapper.container
+			+e.BUTTON.burger.nav-toggle
+				span
+			+e.A.logo-link(href='/')
+				+e.IMG.logo(src='img/logo.svg' alt='header-logo' width='65')
+			+main-nav()
+			+e.callback-wrapper
+				+e.A.callback-link(href='tel:+79876543210')
+					+icon('phone')
+					span +7 987 654 32 10
+				+e.A.consult-link.animate-scroll(href='#') Получить консультацию
