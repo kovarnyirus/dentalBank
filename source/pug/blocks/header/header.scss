@@ -61,5 +61,15 @@
     font-weight: bold;
     font-size: 8px;
     line-height: 150%;
+    position: relative;
+    &:before{
+      position: absolute;
+      display: block;
+      content: "";
+      border-bottom: 1px dashed #FF0080;
+      bottom: 0;
+      left: 5px;
+      right: 0;
+    }
   }
 }

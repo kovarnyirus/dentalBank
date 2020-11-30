@@ -4,5 +4,10 @@ mixin callback()
 			+e.H2.title  Записывайтесь к нам в клинику, позаботьтесь о себе и будущем ваших близких
 			+e.subtitle  Помните, если не воспользоваться процедурой сегодня, то завтра может быть уже поздно!
 			+e.img-wrapper
-				+e.IMG.img(src='img/6.jpg' alt='img')
+				picture
+					source(media="(min-width: 768px)" srcset='img/6.jpg')
+					+e.IMG.img-one(src='img/6-mobile.jpg' alt='img')
+				picture
+					source(media="(min-width: 768px)" srcset='img/7.jpg')
+					+e.IMG.img-two(src='img/7-mobile.jpg' alt='img')
 			+form()

@@ -1,4 +1,10 @@
 .video-block {
   margin-bottom: 50px;
-
+  &__video-wrapper{
+    margin-bottom: 20px;
+  }
+  iframe{
+    width: 100%;
+    height: 45vw;
+  }
 }
