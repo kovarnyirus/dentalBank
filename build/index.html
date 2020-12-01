@@ -8,12 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="path/to/image.jpg">
     <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
-    <!-- Custom Browsers Color-->
     <meta name="theme-color" content="#b9a783">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body class="page-body">
-    <!--+header()-->
     <div class="main-wrapper">
       <header class="header">
         <div class="header__wrapper container">
@@ -23,15 +21,15 @@
             <button class="main-nav__close nav-toggle">
             </button>
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="#"> Почему</a>
+              <li class="main-nav__item"><a class="main-nav__link scroll" href="#why"> Почему</a>
               </li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#"> Как это работает</a>
+              <li class="main-nav__item"><a class="main-nav__link scroll" href="#history"> Как это работает</a>
               </li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#"> Возраст</a>
+              <li class="main-nav__item"><a class="main-nav__link scroll" href="#age"> Возраст</a>
               </li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#"> Отзывы</a>
+              <li class="main-nav__item"><a class="main-nav__link scroll" href="#experts"> Отзывы</a>
               </li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#"> Записаться</a>
+              <li class="main-nav__item"><a class="main-nav__link scroll" href="#callback"> Записаться</a>
               </li>
             </ul>
             <div class="main-nav__callback-wrapper"><a class="main-nav__callback" href="tel:+79876543210">
@@ -76,7 +74,7 @@
           </div>
         </div>
       </section>
-      <section class="why">
+      <section class="why" id="why">
         <div class="why__wrapper container">
           <div class="why__img-wrapper">
             <picture>
@@ -108,7 +106,7 @@
           </div>
         </div>
       </section>
-      <section class="history">
+      <section class="history" id="history">
         <div class="history__wrapper container">
           <h2 class="history__title">Стоматологическая молодость на всю жизнь
           </h2>
@@ -186,7 +184,7 @@
           <!-- end form-->
         </div>
       </section>
-      <section class="age">
+      <section class="age" id="age">
         <div class="age__top">
           <div class="age__wrapper container">
             <div class="age__content-wrapper">
@@ -242,7 +240,7 @@
           </div>
         </div>
       </section>
-      <section class="experts">
+      <section class="experts" id="experts">
         <div class="experts__wrapper container">
           <h2 class="experts__title">Эксперты говорят о необходимости Банка Зубов
           </h2>
@@ -376,7 +374,6 @@
         </div>
       </footer>
     </div>
-    <!--+footer()-->
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
   </body>

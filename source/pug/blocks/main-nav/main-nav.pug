@@ -4,15 +4,15 @@ mixin main-nav()
 		+e.BUTTON.close.nav-toggle
 		+e.UL.list
 			+e.LI.item
-				+e.A.link(href='#')  Почему
+				+e.A.link.scroll(href='#why')  Почему
 			+e.LI.item
-				+e.A.link(href='#')  Как это работает
+				+e.A.link.scroll(href='#history')  Как это работает
 			+e.LI.item
-				+e.A.link(href='#')  Возраст
+				+e.A.link.scroll(href='#age')  Возраст
 			+e.LI.item
-				+e.A.link(href='#')  Отзывы
+				+e.A.link.scroll(href='#experts')  Отзывы
 			+e.LI.item
-				+e.A.link(href='#')  Записаться
+				+e.A.link.scroll(href='#callback')  Записаться
 		+e.callback-wrapper
 			+e.A.callback(href='tel:+79876543210')
 				+icon('phone')
