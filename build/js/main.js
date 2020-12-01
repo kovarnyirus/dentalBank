@@ -85,3 +85,9 @@ NAVBUTTONS.forEach(function (item){
     document.querySelector('.main-nav').classList.toggle('main-nav--open')
   })
 })
+
+
+const PHONEINPUTS =document.querySelectorAll(".phone-mask")
+PHONEINPUTS.forEach(function (item){
+  VMasker(item).maskPattern("999-999-99-99");
+})
