@@ -2,4 +2,29 @@
   background: #EBEBE9;
   padding-top: 40px;
   margin-bottom: 60px;
+  @include media-breakpoint-up(md){
+    padding-top: 0;
+    margin-bottom: 112px;
+    &__wrapper{
+      display: flex;
+      align-items: center;
+    }
+    &__content-wrapper{
+      max-width: 462px;
+      margin-bottom: 0;
+    }
+    &__img-wrapper{
+      max-height: 894px;
+      flex-grow: 1;
+      img{
+        height: 100%;
+        width: auto;
+        max-height: 894px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+  }
 }

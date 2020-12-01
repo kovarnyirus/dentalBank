@@ -24,4 +24,42 @@
   .swiper-slide{
     max-width: 71vw;
   }
+  @include media-breakpoint-up(md){
+    margin-bottom: 100px;
+    &__wrapper{
+      &.container{
+        max-width: 795px;
+      }
+    }
+    &__title{
+      font-size: 34px;
+      line-height: 140%;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+    }
+    &__subtitle{
+      font-size: 28px;
+      line-height: 140%;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+    }
+    p{
+      margin-bottom: 21px;
+      opacity: .7;
+    }
+
+    &__slider{
+      margin-bottom: 50px;
+    }
+
+    .swiper-container{
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .swiper-slide{
+      max-width: 33%;
+    }
+
+  }
 }

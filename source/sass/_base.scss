@@ -33,11 +33,34 @@ button {
     width: 12px;
     height: 12px;
   }
+
+  @include media-breakpoint-up(md) {
+    &-phone {
+      width: 19px;
+      height: 19px;
+    }
+  }
 }
 
 .container {
   padding-left: 20px;
   padding-right: 20px;
+  @include media-breakpoint-up(sm) {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 720px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 960px;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 1152px;
+  }
 }
 
 h1 {
@@ -45,6 +68,11 @@ h1 {
   font-size: 18px;
   line-height: 140%;
   color: #000000;
+  @include media-breakpoint-up(md) {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 140%;
+  }
 }
 
 h2 {
@@ -52,6 +80,10 @@ h2 {
   font-size: 20px;
   line-height: 140%;
   margin-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    font-size: 34px;
+    line-height: 140%;
+  }
 }
 
 h3 {
@@ -59,10 +91,19 @@ h3 {
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    font-size: 34px;
+    line-height: 140%;
+  }
 }
 
 p {
   margin-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 .decor {
@@ -78,6 +119,10 @@ p {
     height: 1px;
     background-color: black;
     top: 0;
+  }
+  @include media-breakpoint-up(md){
+    padding-top: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -113,12 +158,49 @@ p {
       top: .3em;
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    max-width: 60%;
+    margin-bottom: 63px;
+    li{
+      margin-right: 40px;
+      margin-bottom: 0;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 140%;
+      padding-left: 0;
+      padding-top: 20px;
+      &:before{
+        top: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
-a{
+
+
+a {
   text-decoration: none;
   transition: .2s;
-  &:hover{
+
+  &:hover {
     text-decoration: none;
     color: inherit;
+    outline: none;
+  }
+}
+
+a,
+button,
+input{
+  outline: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
   }
 }

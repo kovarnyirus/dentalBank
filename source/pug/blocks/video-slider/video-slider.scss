@@ -12,4 +12,25 @@
     width: 100%;
     height: 45vw;
   }
+  &__title{
+    text-align: center;
+  }
+  @include media-breakpoint-up(md){
+    margin-bottom: 97px;
+    &__title{
+      margin-bottom: 30px;
+    }
+    &__slide-title{
+      font-size: 16px;
+    }
+    .swiper-slide{
+      max-width: calc(33% - 13px);
+    }
+
+    iframe{
+      width: 100%;
+      height: 45vw;
+      max-height: 237px;
+    }
+  }
 }

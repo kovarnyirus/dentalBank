@@ -38,4 +38,15 @@
     background: #FF0080;
     border-radius: 5px;
   }
+  @include media-breakpoint-up(md){
+   max-width: 382px;
+    &__input{
+      font-size: 16px;
+      line-height: 150%;
+    }
+    &__button{
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
 }

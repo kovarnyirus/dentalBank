@@ -1,15 +1,65 @@
 .age {
-  margin-bottom: 150px;
+  margin-bottom: 70px;
   &__top{
     background: #E8EDF0;
     padding-top: 30px;
     p{
-      margin-bottom: 37 px;
+      margin-bottom: 37px;
     }
   }
   &__bottom{
     padding-top: 30px;
     background: #FFAFBA;
+  }
+  @include media-breakpoint-up(md){
+    margin-bottom: 87px;
+    &__wrapper{
+      display: flex;
+      align-items: center;
+    }
+    p{
+      font-size: 22px;
+      line-height: 150%;
+      margin-bottom: 0;
+    }
+    &__content-wrapper{
+      width: 56%;
+      max-width: 560px;
+    }
+    &__top{
+      padding-top: 0;
+      img{
+        max-height: 594px;
+        height: 100%;
+      }
+    }
+    &__title{
+      font-size: 34px;
+      line-height: 140%;
+    }
+    &__img-wrapper{
+      max-height: 594px;
+      flex-grow: 1;
+
+    }
+    &__bottom{
+      padding-top: 0;
+      .age{
+        &__content-wrapper{
+          order: 2;
+        }
+        &__img-wrapper{
+          order: 1;
+          position: relative;
+          height: 50vw;
+          max-height: 663px;
+        }
+      }
+      img{
+        height: 50vw;
+        max-height: 663px;
+      }
+    }
   }
 
 }

@@ -11,4 +11,22 @@
     padding-left: 20px;
     margin-bottom: 25px;
   }
+  @include media-breakpoint-up(md){
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 74px;
+    margin-bottom: 0;
+    &__title{
+      position: static;
+      margin-bottom: 60px;
+    }
+    &__img-wrapper{
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }

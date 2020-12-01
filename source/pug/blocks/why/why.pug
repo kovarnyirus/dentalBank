@@ -2,7 +2,9 @@ mixin why()
 	+b.SECTION.why
 		+e.wrapper.container
 			+e.img-wrapper
-				+e.IMG.img(src='img/2.jpg' alt='img')
+				picture
+					source(media="(min-width: 768px)" srcset='img/2.jpg')
+					+e.IMG.img(src='img/2-mobile.jpg' alt='2')
 			+e.content-wrapper
 				+e.H2.title Почему так важно иметь точную копию ваших зубов
 				+e.H3.subtitle.decor Эстетический аспект

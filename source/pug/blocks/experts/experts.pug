@@ -4,6 +4,7 @@ mixin experts()
 			+e.H2.title Эксперты говорят о необходимости Банка Зубов
 			+e.slider
 				.swiper-container
+					.swiper-button-prev
 					.swiper-wrapper
 							- for (var x = 0; x < 5; x++)
 									.swiper-slide
@@ -16,5 +17,6 @@ mixin experts()
 												+e.IMG.img(src='img/certificate/1.jpg' alt='img')
 												+e.video-link-wrapper
 													+e.A.video-link(href='#') смотреть видеоотзыв
+					.swiper-button-next
 					.swiper-pagination
 

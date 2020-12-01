@@ -19,55 +19,69 @@
         <div class="header__wrapper container">
           <button class="header__burger nav-toggle"><span></span>
           </button><a class="header__logo-link" href="/"><img class="header__logo" src="img/logo.svg" alt="header-logo" width="65" title=""/></a>
-          <!-- start main-nav-->
-          <div class="main-nav section lazy-background" id="main-nav">
-            <div class="container">
-              <div class="section-title text-center">
-                <h2>main-nav</h2>
-              </div>
-              <div class="row"></div>
+          <nav class="main-nav">
+            <button class="main-nav__close nav-toggle">
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#"> Почему</a>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"> Как это работает</a>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"> Возраст</a>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"> Отзывы</a>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#"> Записаться</a>
+              </li>
+            </ul>
+            <div class="main-nav__callback-wrapper"><a class="main-nav__callback" href="tel:+79876543210">
+              <svg class="icon icon-phone ">
+                <use xlink:href="img/icons/sprite.svg#phone"></use>
+              </svg>+7 987 654 32 10</a><a class="main-nav__form-link scroll" href="#callback">Получить консультацию</a>
             </div>
-          </div>
-          <!-- end main-nav-->
+          </nav>
           <div class="header__callback-wrapper"><a class="header__callback-link" href="tel:+79876543210">
             <svg class="icon icon-phone ">
               <use xlink:href="img/icons/sprite.svg#phone"></use>
-            </svg><span>+7 987 654 32 10</span></a><a class="header__consult-link animate-scroll" href="#">Получить консультацию</a>
+            </svg><span>+7 987 654 32 10</span></a><a class="header__consult-link scroll" href="#callback">Получить консультацию</a>
           </div>
         </div>
       </header>
-      <section class="information container">
+      <section class="information">
         <div class="information__wrapper container">
-        </div>
-        <div class="information__img-wrapper">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/1.jpg"/><img class="information__img" src="img/1-mobile.jpg" alt="1" title=""/>
-          </picture>
-        </div>
-        <div class="information__content">
-          <h1 class="information__title">3D сканирование ваших зубов и сохранения их идеальной копии на всю жизнь в Банке Зубов
-          </h1>
-          <ul class="ul">
-            <li>Абсолютно безопасная и безболезненная процедура</li>
-            <li>Воссоздание точной копии вашего зуба при его лечение или замене</li>
-            <li>Отсутствие проблем со здоровьем из-за неправильной формы восстановленного зуба</li>
-          </ul>
-          <!-- start form-->
-          <form class="form">
-            <label class="form__input-wrapper"><input class="form__input form__input--phone" type="phone" placeholder="Введите номер телефона"/>
-              <svg class="icon icon-phone ">
-                <use xlink:href="img/icons/sprite.svg#phone"></use>
-              </svg>
-            </label>
-            <button class="form__button">Получить консультацию о процедуре
-            </button>
-          </form>
-          <!-- end form-->
+          <div class="information__img-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/1.jpg"/><img class="information__img" src="img/1-mobile.jpg" alt="1" title=""/>
+            </picture>
+          </div>
+          <div class="information__content">
+            <h1 class="information__title">3D сканирование ваших зубов и сохранения их идеальной копии на всю жизнь в Банке Зубов
+            </h1>
+            <ul class="ul">
+              <li>Абсолютно безопасная и безболезненная процедура</li>
+              <li>Воссоздание точной копии вашего зуба при его лечение или замене</li>
+              <li>Отсутствие проблем со здоровьем из-за неправильной формы восстановленного зуба</li>
+            </ul>
+            <!-- start form-->
+            <form class="form" id="form">
+              <label class="form__input-wrapper"><input class="form__input form__input--phone" type="phone" placeholder="Введите номер телефона"/>
+                <svg class="icon icon-phone ">
+                  <use xlink:href="img/icons/sprite.svg#phone"></use>
+                </svg>
+              </label>
+              <button class="form__button">Получить консультацию о процедуре
+              </button>
+            </form>
+            <!-- end form-->
+          </div>
         </div>
       </section>
       <section class="why">
         <div class="why__wrapper container">
-          <div class="why__img-wrapper"><img class="why__img" src="img/2.jpg" alt="img" title=""/>
+          <div class="why__img-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/2.jpg"/><img class="why__img" src="img/2-mobile.jpg" alt="2" title=""/>
+            </picture>
           </div>
           <div class="why__content-wrapper">
             <h2 class="why__title">Почему так важно иметь точную копию ваших зубов
@@ -79,15 +93,18 @@
         </div>
       </section>
       <section class="functional">
-        <div class="functional__wrapper">
-          <div class="functional__content-wrapper container">
+        <div class="functional__wrapper container">
+          <div class="functional__content-wrapper">
             <h3 class="functional__title decor">Функциональный аспект
             </h3>
             <p>Изменение формы и расположения зубов при их лечении или протезировании неизбежно вызывает деформацию зубочелюстного аппарата. Меняется положение челюстей, это в свою очередь приводит к изменению тонуса жевательных мышц, деформациям черепа, который состоит из 22 подвижных костей, появлению морщин и изменению овала лица, возрастанию нагрузки на основание черепа, искривлению позвоночника  и, как следствие, дополнительному давлению на спинной мозг.</p>
             <p>Проблема деформаций, приобретенных вследствие стоматологического лечения, обусловлена тем, что у современных стоматологов нет соответствующего инструмента для воссоздания абсолютных копий утраченных зубов, именно это делает проект Dental Bank уникальным во всем мире.</p>
             <p>Мы предлагаем оцифровать ваши зубы в состоянии максимальной гармонии и сохранить полученные 3-d модели в личном кабинете на платформе Dental Bank. Эта информация позволит вам и вашему стоматологу на протяжении всей жизни восстанавливать правильную форму ваших зубов в случае их разрушения или утраты, тем самым сохраняя эстетику ваших зубов, замедляя процессы старения вашего лица и предотвращая все скелетные деформации, вызванные нарушениями прикуса.</p>
           </div>
-          <div class="functional__img-wrapper"><img class="functional__img" src="img/3.jpg" alt="img" title=""/>
+          <div class="functional__img-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/3.jpg"/><img class="functional__img" src="img/3-mobile.jpg" alt="3" title=""/>
+            </picture>
           </div>
         </div>
       </section>
@@ -157,7 +174,7 @@
           <div class="video-block__video-wrapper"><iframe src="https://www.youtube.com/embed/tzELC47fdgU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <!-- start form-->
-          <form class="form">
+          <form class="form" id="form">
             <label class="form__input-wrapper"><input class="form__input form__input--phone" type="phone" placeholder="Введите номер телефона"/>
               <svg class="icon icon-phone ">
                 <use xlink:href="img/icons/sprite.svg#phone"></use>
@@ -173,7 +190,7 @@
         <div class="age__top">
           <div class="age__wrapper container">
             <div class="age__content-wrapper">
-              <h2 class="age__tiele">В каком возрасте будет актуально сканирование
+              <h2 class="age__title">В каком возрасте будет актуально сканирование
               </h2>
               <p>Рекомендованный возраст для полного сканирования зубов - 20-21 год. К этому возрасту окончательно формируется весь зубочелюстной аппарат, и мы сможем получить его эталонную цифровую модель. Именно она на протяжении всей жизни позволит восстанавливать ваши разрушенные зубы их абсолютными копиями.</p>
             </div>
@@ -199,24 +216,26 @@
       </section>
       <section class="video-slider">
         <div class="video-slider__wrapper container">
+          <h2 class="video-slider__title">Отзывы наших клиентов
+          </h2>
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="video-slider__wideo-wrapper"><iframe src="https://www.youtube.com/embed/tzELC47fdgU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <h4 class="video-slider__title">Название видео #1
+                <h4 class="video-slider__slide-title">Название видео #1
                 </h4>
               </div>
               <div class="swiper-slide">
                 <div class="video-slider__wideo-wrapper"><iframe src="https://www.youtube.com/embed/tzELC47fdgU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <h4 class="video-slider__title">Название видео #1
+                <h4 class="video-slider__slide-title">Название видео #1
                 </h4>
               </div>
               <div class="swiper-slide">
                 <div class="video-slider__wideo-wrapper"><iframe src="https://www.youtube.com/embed/tzELC47fdgU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <h4 class="video-slider__title">Название видео #1
+                <h4 class="video-slider__slide-title">Название видео #1
                 </h4>
               </div>
             </div>
@@ -229,6 +248,7 @@
           </h2>
           <div class="experts__slider">
             <div class="swiper-container">
+              <div class="swiper-button-prev"></div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="experts__feedback">
@@ -311,12 +331,13 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-button-next"></div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
       </section>
-      <section class="callback">
+      <section class="callback" id="callback">
         <div class="callback__wrapper container">
           <h2 class="callback__title"> Записывайтесь к нам в клинику, позаботьтесь о себе и будущем ваших близких
           </h2>
@@ -331,7 +352,7 @@
             </picture>
           </div>
           <!-- start form-->
-          <form class="form">
+          <form class="form" id="form">
             <label class="form__input-wrapper"><input class="form__input form__input--phone" type="phone" placeholder="Введите номер телефона"/>
               <svg class="icon icon-phone ">
                 <use xlink:href="img/icons/sprite.svg#phone"></use>
@@ -351,7 +372,7 @@
           </div><a class="footer__callback" href="tel:+79876543210">
           <svg class="icon icon-phone ">
             <use xlink:href="img/icons/sprite.svg#phone"></use>
-          </svg>+7 987 654 32 10</a><a class="footer__form-link scroll" href="#">Получить консультацию</a>
+          </svg>+7 987 654 32 10</a><a class="footer__form-link scroll" href="#callback">Получить консультацию</a>
         </div>
       </footer>
     </div>

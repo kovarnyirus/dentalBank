@@ -1,15 +1,15 @@
 mixin information()
-	+b.SECTION.information.container
+	+b.SECTION.information
 		+e.wrapper.container
-		+e.img-wrapper
-			picture
-				source(media="(min-width: 768px)" srcset='img/1.jpg')
-				+e.IMG.img(src='img/1-mobile.jpg' alt='1')
-		+e.content
-			+e.H1.title 3D сканирование ваших зубов и сохранения их идеальной копии на всю жизнь в Банке Зубов
-			ul.ul
-				li Абсолютно безопасная и безболезненная процедура
-				li Воссоздание точной копии вашего зуба при его лечение или замене
-				li Отсутствие проблем со здоровьем из-за неправильной формы восстановленного зуба
-			+form()
+			+e.img-wrapper
+				picture
+					source(media="(min-width: 768px)" srcset='img/1.jpg')
+					+e.IMG.img(src='img/1-mobile.jpg' alt='1')
+			+e.content
+				+e.H1.title 3D сканирование ваших зубов и сохранения их идеальной копии на всю жизнь в Банке Зубов
+				ul.ul
+					li Абсолютно безопасная и безболезненная процедура
+					li Воссоздание точной копии вашего зуба при его лечение или замене
+					li Отсутствие проблем со здоровьем из-за неправильной формы восстановленного зуба
+				+form()
 

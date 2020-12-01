@@ -1,3 +1,137 @@
 .main-nav {
-display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 5;
+  top: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 28px;
+  min-width: 235px;
+  transition: .2s;
+  transform: translateX(-100vw);
+  box-shadow: 10px 0px 100px rgba(0, 0, 0, 0.25);
+  margin-left: -20px;
+  padding-left: 20px;
+
+  &__close {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-bottom: 36px;
+    outline: none;
+
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 12px;
+      height: 1px;
+      background-color: black;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0 0 20px 0;
+  }
+
+  &__item {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+
+    &:hover {
+      color: #FF0080;
+    }
+
+    &:active {
+      color: #FF98CC;
+    }
+  }
+
+  &__callback-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__callback {
+    margin-right: 10px;
+    color: black;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 10px;
+
+    .icon {
+      margin-right: 10px;
+    }
+  }
+
+  &__form-link {
+    color: #FF0080;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+    border-bottom: 1px dashed #FF0080;
+  }
+  &--open{
+    transform: translateX(0);
+  }
+  @include media-breakpoint-up(md){
+    transform: translateX(0);
+    flex-direction: row;
+    position: static;
+    padding-left: 0;
+    box-shadow: none;
+    min-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    &__close{
+      display: none;
+    }
+    &__callback-wrapper{
+      display: none;
+    }
+    &__list{
+      display: flex;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    &__item{
+      margin-bottom: 0;
+      margin-right: 40px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &__link{
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
 }
