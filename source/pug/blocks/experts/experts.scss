@@ -141,7 +141,11 @@
     }
 
     &__feedback-left {
-      max-width: 390px;
+      max-width: 100%;
+      flex-grow: 1;
+    }
+    &__feedback-right{
+      margin-left: 15px;
     }
     &__name {
       font-weight: bold;
