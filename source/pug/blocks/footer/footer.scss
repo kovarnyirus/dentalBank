@@ -48,12 +48,28 @@
       bottom: 0;
     }
   }
+  &__company-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    opacity: .7;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    width: 100%;
+    justify-content: space-between;
+    span{
+      width: auto;
+      text-align: center;
+    }
+  }
   @include media-breakpoint-up(md){
     padding-top: 38px;
     padding-bottom: 38px;
     &__wrapper{
       flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
     }
     &__logo{
       margin-right: 117px;
@@ -76,6 +92,14 @@
       font-weight: bold;
       font-size: 12px;
       line-height: 150%;
+    }
+    &__company-info{
+      justify-content: flex-end;
+      span{
+        width: auto;
+        text-align: center;
+        margin-left: 15px;
+      }
     }
   }
 }
