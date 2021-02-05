@@ -1,8 +1,8 @@
 mixin form()
 	// start form
-	+b.FORM.form#form
+	+b.FORM.form(action='form.php')
 		+e.LABEL.input-wrapper
-			+e.INPUT.input--phone.phone-mask(type='phone' placeholder='Введите номер телефона')
+			+e.INPUT.input--phone.phone-mask(type='phone' name='phone' placeholder='Введите номер телефона' required)
 			+icon('phone')
 		+e.BUTTON.button Получить консультацию о процедуре
 

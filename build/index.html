@@ -63,8 +63,8 @@
               <li>Отсутствие проблем со здоровьем из-за неправильной формы восстановленного зуба</li>
             </ul>
             <!-- start form-->
-            <form class="form" id="form">
-              <label class="form__input-wrapper"><input class="form__input form__input--phone phone-mask" type="phone" placeholder="Введите номер телефона"/>
+            <form class="form" action="form.php">
+              <label class="form__input-wrapper"><input class="form__input form__input--phone phone-mask" type="phone" name="phone" placeholder="Введите номер телефона" required="required"/>
                 <svg class="icon icon-phone ">
                   <use xlink:href="img/icons/sprite.svg#phone"></use>
                 </svg>
@@ -174,8 +174,8 @@
           <div class="video-block__video-wrapper"><iframe  src="https://www.youtube.com/embed/IeVo3uZG06w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <!-- start form-->
-          <form class="form" id="form">
-            <label class="form__input-wrapper"><input class="form__input form__input--phone phone-mask" type="phone" placeholder="Введите номер телефона"/>
+          <form class="form" action="form.php">
+            <label class="form__input-wrapper"><input class="form__input form__input--phone phone-mask" type="phone" name="phone" placeholder="Введите номер телефона" required="required"/>
               <svg class="icon icon-phone ">
                 <use xlink:href="img/icons/sprite.svg#phone"></use>
               </svg>
@@ -230,6 +230,18 @@
                 <div class="video-slider__wideo-wrapper"><iframe  src="https://www.youtube.com/embed/1VRqgJNB49Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <h4 class="video-slider__slide-title">Dental Bank. Отзыв 1
+                </h4>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-slider__wideo-wrapper"><iframe src="https://www.youtube.com/embed/J8OdtRXTfOg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h4 class="video-slider__slide-title">Dental Bank. Отзыв 3
+                </h4>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-slider__wideo-wrapper"><iframe src="https://www.youtube.com/embed/6ju7UIZLL_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h4 class="video-slider__slide-title">Dental Bank. Отзыв 4
                 </h4>
               </div>
             </div>
@@ -299,7 +311,7 @@
       </section>
       <section class="callback" id="callback">
         <div class="callback__wrapper container">
-          <h2 class="callback__title"> Записывайтесь к нам в клинику, позаботьтесь о себе и будущем ваших близких
+          <h2 class="callback__title"> Записывайтесь к нам, позаботьтесь о себе и будущем ваших близких
           </h2>
           <div class="callback__subtitle"> Помните, если не воспользоваться процедурой сегодня, то завтра может быть уже поздно!
           </div>
@@ -312,8 +324,8 @@
             </picture>
           </div>
           <!-- start form-->
-          <form class="form" id="form">
-            <label class="form__input-wrapper"><input class="form__input form__input--phone phone-mask" type="phone" placeholder="Введите номер телефона"/>
+          <form class="form" action="form.php">
+            <label class="form__input-wrapper"><input class="form__input form__input--phone phone-mask" type="phone" name="phone" placeholder="Введите номер телефона" required="required"/>
               <svg class="icon icon-phone ">
                 <use xlink:href="img/icons/sprite.svg#phone"></use>
               </svg>
@@ -322,6 +334,10 @@
             </button>
           </form>
           <!-- end form-->
+        </div>
+      </section>
+      <section class="map-block">
+        <div class="map-block__wrapper"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af55eb245fbae45781e781b4a2738d306f4f3f780d5798a137439eb18314214e3&amp;source=constructor" frameborder="0"></iframe>
         </div>
       </section>
       <footer class="footer">
